@@ -1,0 +1,73 @@
+SINTAXE DA FUNÇÃO:
+
+def nome_da_funcao(parâmetros):
+    # bloco de código
+    return resultado
+
+
+- OUTRO:
+
+def dobro(numero):
+    return numero * 2
+- usando a função: 
+resultado = dobro(5)
+print(resultado)  # Saída: 10
+
+- return devolve um valor para ser usado em outro lugar.
+
+- print mostra algo na tela, mas não devolve nada para ser usado.
+
+
+def saudacao(nome):
+    return f"Olá, {nome}!"
+
+mensagem = saudacao("Maria")
+print(mensagem)  # Saída: Olá, Maria!
+
+- Às vezes, queremos que um parâmetro tenha um valor "automático" caso o usuário não informe.
+def saudacao(nome="visitante"):
+    return f"Olá, {nome}!"
+print(saudacao())         # Saída: Olá, visitante!
+
+
+LAMBDA
+
+função pequena e rápida, usada quando você não precisa dar um nome a ela — geralmente para tarefas simples.
+
+SINTAXE:
+lambda argumentos: expressão
+
+dobro = lambda x: x * 2
+print(dobro(4))  # Saída: 8
+
+soma = lambda a, b: a + b
+print(soma(3, 7))  # Saída: 10
+
+Quando usar?
+Com funções como map(), filter(), sorted()
+
+Quando a função é muito curta e usada só uma vez
+
+
+ARGS
+
+*args – argumentos posicionais variáveis
+Permite passar vários valores (em forma de tupla) para a função.
+
+def somar(*args):
+    return sum(args)
+print(somar(1, 2, 3, 4))  # Saída: 10
+
+
+KWARGS
+
+**kwargs – argumentos nomeados variáveis
+Permite passar vários pares chave-valor (como dicionário).
+
+Usando **kwargs numa função, você pode receber qualquer quantidade de argumentos com nome, ou seja, pares chave=valor.
+
+def mostrar_info(**kwargs):
+    for chave, valor in kwargs.items():
+        print(f"{chave}: {valor}")
+mostrar_info(nome="Carlos", idade=25, cidade="São Paulo")
+
