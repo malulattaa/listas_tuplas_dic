@@ -15,4 +15,4 @@ while True:
 
 for nome, idade in lista:
     if idade >18:
-        print(nome)
+        print(f"{nome} tem {idade} anos")

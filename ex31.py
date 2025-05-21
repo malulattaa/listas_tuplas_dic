@@ -1,12 +1,19 @@
-""" 
-Dadaumalista de strings, crie uma nova lista com o tamanho (n´ umero de caracteres)
-de cada string
-"""
+"""Crie uma fun¸ c˜ao que verifique se uma lista est´a ordenada"""
 
-lista = ['maçã', 'banana', 'pêssego', 'uva']
-qtde = []
+#sorted: serve para ordenar, nesse caso ele esta comparando a lista, com a versão ordenada dela
 
-for i in range(len(lista)):
-    qtde.append(len(lista[i]))
+lista = []
+
+while True:
+    num = int(input("Digite números para saber se estão ordenados ou (0) para sair: "))
+    if num == 0:
+        break
+    lista.append(num)
     
-print(qtde)
+def ordenada(lista):
+    if lista == sorted(lista):
+        print("A lista está ordenada")
+    else:
+        print("A lista não está ordenada")
+    return lista
+print(ordenada(lista))
