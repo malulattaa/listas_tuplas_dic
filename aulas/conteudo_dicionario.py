@@ -17,14 +17,20 @@ o segundo é valor
     dict = {"a":( 1, 2, [1, 2, {1:20, 2:30}]), "b":20)
     
     dicionario e lista nao pode ser chave
-    tupla pode mas nao é muito usual **ver isso aq
+    tupla pode mas nao é muito usual 
+        d = {
+        (1, 2): "coordenadas",
+        ("a", "b"): "letras"
+    }
+    print(d[(1, 2)])  # saída: coordenadas
+
 """
 """
 dic = {"nome1": "beto", "nome2": "ana", "nome3": "victor"}
 
 dic["nota"] = 7.80
 
-# o print só é usado nesse casa para debug
+# o print só é usado nesse caso para debug
 print(dic)
 
 #dic = {(1, 2, 3): "beto"} pode
@@ -61,11 +67,6 @@ for i in range(5):
     nome = input("Digite um nome: ")
     nomes[i] = nome
 print(nomes)""
-
-
-for h in nome.:
-print(f"nomes: {h}")
-depois tentar fazer isso
 
 """
 #gerar um dic com 20 numeros inteiros e somar eles
