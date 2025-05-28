@@ -85,3 +85,64 @@ gerador = (x**2 for x in range(5))
 #só printar isso aq n funciona, tem que percorrer ele 
 for valor in gerador:
     print(valor)
+
+
+string = [ i for i in "programe em python"]
+print(string) #retorna cada letra 
+
+string = [ i for i in "programe em python" if  i in "aeiou"]
+print(string) #retorna as vogais
+
+string = [ i for i in ["programe", "python", "algo sem p"] if  i.startswith('p')]
+print(string) #só retona as que começam com p
+
+#lista de listas
+
+lista_de_listas = [["programe", "a"], ["python","b"], ["teste" , "c"]]
+
+sublista = [i[0] for i in lista_de_listas]
+#para cada item dessa lista (cada lista), ele pega o primeiro elemento
+print(sublista)
+
+#para pegar o segundo elemento
+sublista = [i[1] for i in lista_de_listas]
+print(sublista)
+
+#todos os elementos 
+
+sublista = [item for lista in lista_de_listas for item in lista]
+print(sublista)
+#item cria uma nova lista com cada item encontrado
+# for lista in lista_de_listas esta percorrendo cada sublista dentro da lista principal.
+# for item in lista: Para cada lista (sublista), ele percorre cada item.
+
+#para dicio 
+
+dicio = {"programe": "a", "python":"b", "teste" : "c"}
+
+percorrendo = [i for i in dicio]
+print(percorrendo) #percorre chaves
+
+percorrendo = [i for i in dicio.values()]
+print(percorrendo) #percorre valores
+
+
+#dobrar valor de produtos
+
+listas_preco = [1000, 1500, 2000, 600, 100]
+
+nova_lista = [preco * 2 for preco in listas_preco]
+print(nova_lista)
+
+#produtos que custarem acima de 1000 dol, importo de 50% sobre o valor total
+
+#fazendo com o for normal
+
+imposto = []
+for preco in listas_preco:
+    if preco > 1000:
+        imposto.append(preco*0.5)
+print(imposto)
+
+comp = [preco*0.5 for preco in listas_preco if preco > 1000]
+print(comp)

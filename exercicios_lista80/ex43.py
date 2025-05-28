@@ -34,8 +34,9 @@ if funcao == 'a':
         print("Produto 2 - Calça (70,00)")
         print("Produto 3 - Tênis (110,00)")
         print("Produto 4 - Bolsa (30,00)")
+        print("Voltar ao menu - 5")
         print("")
-        produto = int(input("Digite o número do produto que deseja: "))
+        produto = int(input("Digite o número do que deseja: "))
         qtde = int(input("Digite a quantidade: "))
         if produto == 1:
             carrinho.append({'produto': 'Camiseta', 'preco': 50, 'qtde': qtde})
@@ -57,7 +58,14 @@ if funcao == 'a':
             total = mult(30, qtde)
             print(f"Carrinho: {carrinho}")
             print(total)
+            
         else:
             print("Esse produto não existe!")
 elif funcao == 'l':
     print(carrinho)
+elif funcao == 'r':
+    remover = input("Qual produto deseja remover? ")
+    if produto in carrinho:
+        carrinho.remove(produto)
+    else:
+        print("O produto não está nol carrinho")

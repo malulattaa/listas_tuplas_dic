@@ -21,9 +21,9 @@ for i in range(1,6):
     
     notas = [random.randint(0,10) for j in range(4)]
     media = sum(notas) / len(notas)
-    media_lista.append(media)
+    """media_lista.append(media)
     maior_media = max(media_lista)
-    print(maior_media)
+    print(maior_media)"""
     medias[nome] = media  #descorbrir como fazer pra imprimir o nome respectivo a maior media
     print(medias)
     
@@ -33,8 +33,12 @@ for i in range(1,6):
 for matricula, nome_nota in dados.items():
     for nome, notas in nome_nota.items():
         print(f"{matricula} : {nome} - Notas: {notas}")
-
-
+        
+maiorMedia = 0
+for maior in medias.values():
+    if maiorMedia < maior:
+        maiorMedia = maior
+        print(maior)
 
 #dicionario que usa tupla como chave e a chave é um coldigo binario pra decodificar
 #for items in dados.items():

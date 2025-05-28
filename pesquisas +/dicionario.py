@@ -27,3 +27,32 @@ aluno["idade"] = 21
 del aluno["curso"]
 
 print(aluno)
+
+
+filme = {
+    'titulo' : 'starwars',
+    'ano' : 1977,
+    'diretor':'george lucas'
+    
+    
+}
+print(filme)
+
+for k,v in filme.items():
+    print(f'O {k} é {v}')
+    
+pessoas = {
+    'nomes':'gustavo',
+    'sexo' : 'M',
+    'idade' : 25
+    
+}
+print(f'O {pessoas["nomes"]} tem {pessoas["idade"]} anos')
+
+brasil = []
+estado1 = {'uf':'rio de janeiro', 'sigla' : 'rj'}
+estado2 = {'uf':'são paulo', 'sigla' : 'sp'}
+brasil.append(estado1)
+brasil.append(estado2)
+
+print(brasil)
