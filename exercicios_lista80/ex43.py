@@ -11,6 +11,8 @@ fazer um lista de produtos com seus preços e pedir pro usuario escolher o produ
 TENHO QUE PERGUNTAR SE ELE DESEJA CONTINUAR COMPRANDO DEPOIS DE ADD CADA UM E TENHO QUE PERGUNTAR ANTES DE TUDO SE ELE QUER ADICIONAR OU REMOVER MEU DEUS ME AJUDA
 """
 
+#ARRUMAR ESSE CODIGO (REFAZER)
+
 print("Seja bem vindo! Selecione se deseja listar os produtos do carrinho, remover ou adicionar.")
 print("")
 print("A - Adicionar")
