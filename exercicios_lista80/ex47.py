@@ -5,14 +5,37 @@ lista_tupla = []
 while True:
     print("Digite '000' para sair")
     nome = input("Digite o nome: ")
-    nota = int(input("Digite uma nota: "))
-    if nome == '000' and nota == 000:
+    if nome == '000':
         break
-    lista_tupla.append(nome)
-    lista_tupla.append(nota)
-    """tupla = (nome,nota)
-    lista.append(tupla)"""
-print(lista_tupla)
+    nota = int(input("Digite uma nota: "))
+    tupla = (nome, nota)
+    lista.append(tupla)
+    
+lista.sort(key=lambda x: x[1], reverse=True)
+
+for item in lista:
+    print(item)
+    
+    
+""" 
+lambda é uma função anônima (sem nome), também chamada de função lambda.
+x é cada elemento da lista.
+x[1] ta falando pa pegar o elemento na posição 1 (nota)
+"""
+
+
+
+
+
+
+
+
+"""lista_tupla.append(nome)
+lista_tupla.append(nota)"""
+
+"""tupla = (nome,nota)
+lista.append(tupla)"""
+"""print(lista_tupla)
 tupla = tuple(lista_tupla)
 print(tupla)
 print(lista)
@@ -21,7 +44,7 @@ print(lista)
 for pos_nota in range(0, len(tupla)):
     if pos_nota % 2 == 1:
         lista_tupla.sort(reverse=True)
-print(lista)
+print(lista)"""
 
 
 """for pos_nota in range(0, len(lista)):

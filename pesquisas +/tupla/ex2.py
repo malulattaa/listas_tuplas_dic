@@ -6,9 +6,12 @@
     
 time = ("Palmeiras", "Flamengo", "Chapecoense", "Vasco", "Inter", "Fluminense", "Botafogo", "São Paulo", "Corinthians", "Bahia", "Cruzeiro", "Bragantino", "Ceara", "Mirassol", "Atlético MG", "Fortazela", "Santos", "Juventude", "Sport Recife", "Grêmio")
 
-print(time[0:6])
-print(time[-5:])
+print(time[0:5])
+print(time[-4:])
 print(sorted(time))
 for pos in range(0, len(time)):
     if time[pos] == "Chapecoense":
         print(f"{time[pos]} está na posição {pos+1}")
+
+#times.index("Chapecoense")+1
+
