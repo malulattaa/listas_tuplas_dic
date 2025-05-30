@@ -10,14 +10,18 @@ while True:
     nota = int(input("Digite uma nota: "))
     tupla = (nome, nota)
     lista.append(tupla)
-    
-lista.sort(key=lambda x: x[1], reverse=True)
+
+def notas(ordenar):
+    return ordenar[1]
+lista.sort(key = notas, reverse=True)
 
 for item in lista:
     print(item)
     
     
 """ 
+lista.sort(key=lambda x: x[1], reverse=True)
+
 lambda é uma função anônima (sem nome), também chamada de função lambda.
 x é cada elemento da lista.
 x[1] ta falando pa pegar o elemento na posição 1 (nota)
