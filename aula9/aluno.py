@@ -1,5 +1,5 @@
 #tem q ser singular pq n ta tratand de liusta
-
+alunos = []
 def cadastrar_aluno():
     #ler dados do aluno {cpf : 123, nome:beto, endereco : rua x, +2 campos}
     pass
