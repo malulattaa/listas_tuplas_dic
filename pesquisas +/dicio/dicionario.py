@@ -66,6 +66,8 @@ for c in range(0,3):
     brasil.append(estado.copy()) #fateamento em dicio
 print(brasil)
 
+
+#ACHO QUE DA PRA USAR ESSE NO TRABALHO
 for e in brasil:
     for k,v in e.items():
         print(f"O campo {k}, Tem valor: {v}")

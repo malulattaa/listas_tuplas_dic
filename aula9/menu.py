@@ -50,13 +50,10 @@ def menu_cadastro():
     
     opcoes = {
         
-        1: cadastrar_aluno()
-        2: cadastrar_professor()
-        3: cadastrar_turma()
-        4: menu_principal()
+        1: cadastrar_aluno,
+        2: cadastrar_professor,
+        #3: cadastrar_turma
+        4: menu_principal
         
+
     }
-    if op == 1:
-        cadastrar_aluno()
-    elif op == 2:
-        cadastrar_professor()
