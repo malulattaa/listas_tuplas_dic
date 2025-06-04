@@ -1,5 +1,7 @@
 def func1(x, y):
     h = [x ** 2 for x in func2(y)]
+    #fazer do jeito da logica com map
+    #h = x ** func2(y)
     #h = [2** x for x in func2(y)] seguindo a logica que tava, pra mim tinha que ficar assim
     return h
 #2 elevado 3 = 8

@@ -14,7 +14,7 @@ print(lista)
 
 def conferir_idade(pessoa):
     return pessoa[1]
-    
+#sorted(pessoas, key = lambda x: x[1])
 velho = max(lista, key = conferir_idade)
 novo = min(lista, key = conferir_idade)
 
