@@ -64,7 +64,7 @@ num = list(filter(lambda x: x > 60, lista))
 print('Exemplo - 4: Números maiores que 60 ', num)
 
 menor = list(filter(lambda x: x < 25, lista))
-print('Exemplo - 4: Números menores que 25 : ', menor)
+print('Exemplo - 4: Números menores que 25 : ', menor  )
 
 media = list(filter(lambda x: x > sum(lista) / len(lista), lista))
 print('Exemplo - 5: Média: ', media)
