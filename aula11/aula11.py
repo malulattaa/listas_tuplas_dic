@@ -43,17 +43,6 @@ print(maior)
 # elevar map
 # media reduce
 
-#minha ideia
-print(numeros)
-par = list(filter(lambda x: x % 2 == 0, numeros))
-print(par)
-elevar = list(map(lambda x: x**2, par))
-print(elevar)
-qtde = len(par)
-print(qtde)
-"""media = reduce(lambda x, y: x+y/elevar)
-print(media)
-"""
 #correcao
 media = reduce(lambda x, y: x + y, map(lambda x: x**2 ,filter(lambda x: x % 2 == 0, numeros))) / len(list(filter(lambda x: x % 2 == 0, numeros)))
 print(media)
